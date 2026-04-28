@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Student Portfolio — Casual</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Simple favicon using emoji (no external files) -->
+  <meta name="theme-color" content="#0b6e4f">
+  <script src="JavaScript.js"></script>
+</head>
+<link rel="stylesheet" href="CSS.css">
+<body>
+  <!-- Header / Navigation -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#home">Casual<span class="dot">.</span></a>
+
+      <!-- Mobile menu button -->
+      <button id="menu-toggle" class="menu-toggle" aria-expanded="false" aria-controls="main-nav">
+        <span class="sr-only">Toggle navigation</span>
+        <!-- simple hamburger -->
+        <span class="hamburger"></span>
+      </button>
+
+      <nav id="main-nav" class="nav">
+        <ul class="nav-list">
+          <li><a href="#home" class="nav-link">Home</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main content as single-page sections (works like 3 pages) -->
+  <main>
+    <!-- Home Section -->
+    <section id="home" class="hero">
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <h1>Hello, I'm <span class="accent">Casual</span></h1>
+          <p class="lead">
+            A Year 2 Computer Science student building clean, accessible front-end projects.
+            I enjoy turning ideas into simple, usable interfaces using HTML, CSS and JavaScript.
+          </p>
+          <p>
+            <a class="btn" href="#projects">View Projects</a>
+            <a class="btn btn-outline" href="#contact">Get in touch</a>
+          </p>
+        </div>
+
+        <!-- Simple profile card (no external images) -->
+        <aside class="profile-card" aria-label="Profile summary">
+          <div class="avatar" aria-hidden="true">C</div>
+          <h3>Casual</h3>
+          <p class="muted">Year 2 Computer Science Student</p>
+          <ul class="profile-list">
+            <li><strong>Skills:</strong> HTML, CSS, JavaScript</li>
+            <li><strong>Interests:</strong> Web design, UX, small games</li>
+          </ul>
+        </aside>
+      </div>
+    </section>
+
+    <hr class="divider" />
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+      <div class="container">
+        <h2>Projects</h2>
+        <p class="muted">A selection of small projects demonstrating front-end skills.</p>
+
+        <!-- Grid layout for project cards -->
+        <div class="projects-grid">
+          <!-- Project 1 -->
+          <article class="project-card">
+            <div class="project-media" aria-hidden="true">
+              <!-- CSS-styled placeholder "screenshot" -->
+              <div class="screenshot">
+                <svg viewBox="0 0 100 60" preserveAspectRatio="none" class="screenshot-svg">
+                  <rect width="100" height="60" fill="#eaf6f0"></rect>
+                  <text x="50" y="34" text-anchor="middle" fill="#0b6e4f" font-size="8">Task Manager UI</text>
+                </svg>
+              </div>
+            </div>
+            <div class="project-body">
+              <h3>Task Manager UI</h3>
+              <p>
+                A responsive single-page task manager interface built with semantic HTML and CSS Grid.
+                Features include task lists, filters, and keyboard-accessible controls.
+              </p>
+              <p class="project-meta"><strong>Tech:</strong> HTML, CSS Grid, Vanilla JS</p>
+              <p>
+                <a class="link" href="#contact">Request demo</a>
+              </p>
+            </div>
+          </article>
+
+          <!-- Project 2 -->
+          <article class="project-card">
+            <div class="project-media" aria-hidden="true">
+              <div class="screenshot">
+                <svg viewBox="0 0 100 60" preserveAspectRatio="none" class="screenshot-svg">
+                  <rect width="100" height="60" fill="#fff6ea"></rect>
+                  <text x="50" y="34" text-anchor="middle" fill="#b35a00" font-size="8">Interactive Quiz</text>
+                </svg>
+              </div>
+            </div>
+            <div class="project-body">
+              <h3>Interactive Quiz</h3>
+              <p>
+                A small quiz app that demonstrates DOM manipulation and state management.
+                Includes scoring, progress, and responsive layout for mobile devices.
+              </p>
+              <p class="project-meta"><strong>Tech:</strong> HTML, CSS Flexbox, JavaScript</p>
+              <p>
+                <a class="link" href="#contact">See source</a>
+              </p>
+            </div>
+          </article>
+
+          <!-- Project 3 (extra realistic example) -->
+          <article class="project-card">
+            <div class="project-media" aria-hidden="true">
+              <div class="screenshot">
+                <svg viewBox="0 0 100 60" preserveAspectRatio="none" class="screenshot-svg">
+                  <rect width="100" height="60" fill="#eef2ff"></rect>
+                  <text x="50" y="34" text-anchor="middle" fill="#2a2a72" font-size="8">Portfolio Template</text>
+                </svg>
+              </div>
+            </div>
+            <div class="project-body">
+              <h3>Portfolio Template</h3>
+              <p>
+                A clean, reusable portfolio template that can be deployed to static hosting.
+                Focused on accessibility, responsive design, and simple content structure.
+              </p>
+              <p class="project-meta"><strong>Tech:</strong> HTML, CSS, Accessibility</p>
+              <p>
+                <a class="link" href="#contact">Use this template</a>
+              </p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <hr class="divider" />
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+      <div class="container contact-grid">
+        <div class="contact-info">
+          <h2>Contact</h2>
+          <p class="muted">Have a question or want to collaborate? Fill out the form and I'll get back to you.</p>
+
+          <ul class="contact-list">
+            <li><strong>Email:</strong> <span class="muted">obagaboaz@gmail.com</span></li>
+            <li><strong>Location:</strong> <span class="muted">Matathani ward, Machakos County</span></li>
+          </ul>
+        </div>
+
+        <!-- Contact form (UI only, no backend) -->
+        <form id="contact-form" class="contact-form" novalidate>
+          <!-- Form validation is handled in script.js -->
+          <div class="form-row">
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text" placeholder="Your name" required />
+            <small class="error" id="error-name" aria-live="polite"></small>
+          </div>
+
+          <div class="form-row">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" placeholder="you@example.com" required />
+            <small class="error" id="error-email" aria-live="polite"></small>
+          </div>
+
+          <div class="form-row">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Write a short message" required></textarea>
+            <small class="error" id="error-message" aria-live="polite"></small>
+          </div>
+
+          <div class="form-actions">
+            <button type="submit" class="btn">Send Message</button>
+            <button type="reset" class="btn btn-outline">Reset</button>
+          </div>
+
+          <!-- Success message (hidden by default) -->
+          <p id="form-success" class="form-success" role="status" aria-live="polite" hidden>
+            Thank you! Your message looks good. (This is a UI-only demo.)
+          </p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p class="muted">© <span id="year"></span> Casual — Student Portfolio</p>
+      <p class="muted">Built with HTML, CSS, and JavaScript</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
